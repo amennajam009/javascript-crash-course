@@ -272,7 +272,7 @@ console.log(Text);
 //yourage(37);
 //
 
-
+/*
 //evenodd function...
 let evenoddnumber=(num1)=>{
   try {
@@ -328,3 +328,23 @@ let processwala=( studenamenkiinfowalafunction)=>{
   console.log(studenamenkiinfowalafunction);
 }
 processwala(amenkiinfo);
+*/
+
+let Student= {
+  name:'amen',
+  age:20,
+  song:'kali kali zulfon k panday naah dalo ',
+  height:5
+}
+
+let studentInfo=(amenkiinfo)=>{
+    if(amenkiinfo.age===20 && amenkiinfo.age > 21){
+      console.log('you can assign into it');
+      return;
+    }
+    if(amenkiinfo.name!=='amen'){
+      console.log('your not amen');
+      return;
+    }
+}
+studentInfo(Student);
