@@ -332,19 +332,35 @@ processwala(amenkiinfo);
 
 let Student= {
   name:'amen',
-  age:20,
-  song:'kali kali zulfon k panday naah dalo ',
-  height:5
+  age:17,
+  song:'kali kali zulfon k panday naah dalo',
+  height:4,
+  certificate:true
 }
 
 let studentInfo=(amenkiinfo)=>{
-    if(amenkiinfo.age===20 && amenkiinfo.age > 21){
+    if(amenkiinfo.age===18 || amenkiinfo.age>20){
       console.log('you can assign into it');
       return;
     }
+    
     if(amenkiinfo.name!=='amen'){
       console.log('your not amen');
       return;
     }
+
+    if(amenkiinfo.song!=='kali kali zulfon k panday naah dalo'){
+      console.log('the song must be kali kali zulfon k panday naah dalo');
+      return;
+    }
+    if(amenkiinfo.height!==5){
+      console.log('you prolly not amen cuz she is way too short lol');
+      return;
+    }
+    
+
+  
+
+    console.log(amenkiinfo);
 }
 studentInfo(Student);
