@@ -330,12 +330,15 @@ let processwala=( studenamenkiinfowalafunction)=>{
 processwala(amenkiinfo);
 */
 
+
+ //ticket check....
+
 let Student= {
   name:'amen',
   age:17,
   song:'kali kali zulfon k panday naah dalo',
-  height:4,
-  certificate:true
+  height:5,
+  certificate:false
 }
 
 let studentInfo=(amenkiinfo)=>{
@@ -357,10 +360,12 @@ let studentInfo=(amenkiinfo)=>{
       console.log('you prolly not amen cuz she is way too short lol');
       return;
     }
+    if(amenkiinfo.certificate!==true){
+      console.log('sorry if you have no corona certificate so you cannot be part of it');
+      return;
+    }
     
-
-  
-
+    
     console.log(amenkiinfo);
 }
 studentInfo(Student);
